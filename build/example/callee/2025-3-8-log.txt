@@ -1,0 +1,6 @@
+5:27:4 =>[info] service_name:FiendServiceRpc
+5:27:4 =>[info] method_name:GetFriendsList
+5:33:54 =>[info] service_name:FiendServiceRpc
+5:33:54 =>[info] method_name:GetFriendsList
+5:36:15 =>[info] service_name:FiendServiceRpc
+5:36:15 =>[info] method_name:GetFriendsList

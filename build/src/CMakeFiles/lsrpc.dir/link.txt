@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblsrpc.a  CMakeFiles/lsrpc.dir/mprpcapplication.cc.o CMakeFiles/lsrpc.dir/rpcprovider.cc.o CMakeFiles/lsrpc.dir/mprpcconfig.cc.o CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o CMakeFiles/lsrpc.dir/mprpcchannel.cc.o CMakeFiles/lsrpc.dir/mprpccontroller.cc.o CMakeFiles/lsrpc.dir/logger.cc.o CMakeFiles/lsrpc.dir/zookeeperutil.cc.o
+/usr/bin/ranlib liblsrpc.a
