@@ -125,6 +125,33 @@ lsrpc/fast:
 	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/build
 .PHONY : lsrpc/fast
 
+ConnectionPool.o: ConnectionPool.cc.o
+
+.PHONY : ConnectionPool.o
+
+# target to build an object file
+ConnectionPool.cc.o:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.o
+.PHONY : ConnectionPool.cc.o
+
+ConnectionPool.i: ConnectionPool.cc.i
+
+.PHONY : ConnectionPool.i
+
+# target to preprocess a source file
+ConnectionPool.cc.i:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.i
+.PHONY : ConnectionPool.cc.i
+
+ConnectionPool.s: ConnectionPool.cc.s
+
+.PHONY : ConnectionPool.s
+
+# target to generate assembly for a file
+ConnectionPool.cc.s:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.s
+.PHONY : ConnectionPool.cc.s
+
 Myrpcapplication.o: Myrpcapplication.cc.o
 
 .PHONY : Myrpcapplication.o
@@ -350,6 +377,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lsrpc"
+	@echo "... ConnectionPool.o"
+	@echo "... ConnectionPool.i"
+	@echo "... ConnectionPool.s"
 	@echo "... Myrpcapplication.o"
 	@echo "... Myrpcapplication.i"
 	@echo "... Myrpcapplication.s"

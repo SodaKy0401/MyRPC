@@ -15,7 +15,7 @@ set(SRC_LIST
     Myrpccontroller.cc
     logger.cc
     zookeeperutil.cc
-   
+    ConnectionPool.cc
     )
 
 

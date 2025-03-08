@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lsrpc.dir/ConnectionPool.cc.o"
   "CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o"
   "CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o"
   "CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o"

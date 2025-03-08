@@ -69,13 +69,13 @@ public:
       //提供静态日志方法
       static void Info(const std::string &message)
       {
-        LOG(INFO)<<message;
+        std::cout<<message;
       }
       static void Warning(const std::string &message){
         LOG(WARNING)<<message;
       }
       static void ERROR(const std::string &message){
-        LOG(ERROR)<<message;
+        std::cout<<message;
       }
           static void Fatal(const std::string& message) {
         LOG(FATAL) << message;

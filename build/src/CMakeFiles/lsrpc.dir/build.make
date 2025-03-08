@@ -161,6 +161,19 @@ src/CMakeFiles/lsrpc.dir/zookeeperutil.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/zookeeperutil.cc.s"
 	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/zookeeperutil.cc -o CMakeFiles/lsrpc.dir/zookeeperutil.cc.s
 
+src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
+src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.o: ../src/ConnectionPool.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.o"
+	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/ConnectionPool.cc.o -c /home/ls/RPC/src/ConnectionPool.cc
+
+src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/ConnectionPool.cc.i"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/ConnectionPool.cc > CMakeFiles/lsrpc.dir/ConnectionPool.cc.i
+
+src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/ConnectionPool.cc.s"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/ConnectionPool.cc -o CMakeFiles/lsrpc.dir/ConnectionPool.cc.s
+
 # Object files for target lsrpc
 lsrpc_OBJECTS = \
 "CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o" \
@@ -170,7 +183,8 @@ lsrpc_OBJECTS = \
 "CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o" \
 "CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o" \
 "CMakeFiles/lsrpc.dir/logger.cc.o" \
-"CMakeFiles/lsrpc.dir/zookeeperutil.cc.o"
+"CMakeFiles/lsrpc.dir/zookeeperutil.cc.o" \
+"CMakeFiles/lsrpc.dir/ConnectionPool.cc.o"
 
 # External object files for target lsrpc
 lsrpc_EXTERNAL_OBJECTS =
@@ -183,9 +197,10 @@ src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/logger.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/zookeeperutil.cc.o
+src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/ConnectionPool.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/build.make
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library liblsrpc.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library liblsrpc.a"
 	cd /home/ls/RPC/build/src && $(CMAKE_COMMAND) -P CMakeFiles/lsrpc.dir/cmake_clean_target.cmake
 	cd /home/ls/RPC/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lsrpc.dir/link.txt --verbose=$(VERBOSE)
 
