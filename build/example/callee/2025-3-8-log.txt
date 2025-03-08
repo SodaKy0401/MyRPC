@@ -4,3 +4,5 @@
 5:33:54 =>[info] method_name:GetFriendsList
 5:36:15 =>[info] service_name:FiendServiceRpc
 5:36:15 =>[info] method_name:GetFriendsList
+6:4:13 =>[info] service_name:FiendServiceRpc
+6:4:13 =>[info] method_name:GetFriendsList

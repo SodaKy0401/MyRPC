@@ -1,5 +1,5 @@
 #include <iostream>
-#include "mprpcapplication.h"
+#include "Myrpcapplication.h"
 #include "friend.pb.h"
 #include <atomic>
 #include <vector>
@@ -8,17 +8,17 @@
   /*
 int main(int argc, char **argv)
 {
-    // 整个程序启动以后，想使用mprpc框架来享受rpc服务调用，一定需要先调用框架的初始化函数（只初始化一次）
+    // 整个程序启动以后，想使用LS_RPC框架来享受rpc服务调用，一定需要先调用框架的初始化函数（只初始化一次）
     rpcApplication::Init(argc, argv);
 
     // 演示调用远程发布的rpc方法Login
-    fixbug::::FiendServiceRpc_Stub stub(new MyrpcChannel());
+    LS_RPC::::FiendServiceRpc_Stub stub(new MyrpcChannel());
     // rpc方法的请求参数
-    fixbug::::GetFriendsListRequest request;
+    LS_RPC::::GetFriendsListRequest request;
     request.set_userid(1000);
     // rpc方法的响应
-    fixbug::::GetFriendsListResponse response;
-    // 发起rpc方法的调用  同步的rpc调用过程  MprpcChannel::callmethod
+    LS_RPC::::GetFriendsListResponse response;
+    // 发起rpc方法的调用  同步的rpc调用过程  MyrpcChannel::callmethod
     MyrpcController controller;
     
     
@@ -58,13 +58,13 @@ void testqps(int thread_id, std::atomic<int> &success_count, std::atomic<int> &f
     
 
     // 演示调用远程发布的rpc方法Login
-    fixbug::FiendServiceRpc_Stub stub(new MprpcChannel());
+    LS_RPC::FiendServiceRpc_Stub stub(new MyrpcChannel());
     // rpc方法的请求参数
-    fixbug::GetFriendsListRequest request;
+    LS_RPC::GetFriendsListRequest request;
     request.set_userid(1000);
     // rpc方法的响应
-    fixbug::GetFriendsListResponse response;
-    MprpcController controller;
+    LS_RPC::GetFriendsListResponse response;
+    MyrpcController controller;
    
     
     stub.GetFriendsList(&controller,&request, &response, nullptr); // RpcChannel->RpcChannel::callMethod 集中来做所有rpc方法调用的参数序列化和网络发送             // 我们重写的Rpchannel继承google的rpc框架的rpcchannel,形成多态
@@ -99,9 +99,9 @@ int main(int argc, char **argv)
 {
     
     
-    MprpcApplication::Init(argc, argv);
+    MyrpcApplication::Init(argc, argv);
    /* rpcLogger logger("MyRPC");
-    FLAGS_log_dir = "/home/ls/fixbug::/example/caller/tmp";
+    FLAGS_log_dir = "/home/ls/LS_RPC::/example/caller/tmp";
     FLAGS_logtostderr = false;  
     FLAGS_alsologtostderr = false; 
     FLAGS_log_prefix = true; // 允许日志文件名前缀*/

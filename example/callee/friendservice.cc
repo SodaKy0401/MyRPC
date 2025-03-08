@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 #include "friend.pb.h"
-#include "mprpcapplication.h"
+#include "Myrpcapplication.h"
 #include "rpcprovider.h"
 #include <vector>
 #include "logger.h"
 
 
-class FriendService : public fixbug::FiendServiceRpc
+class FriendService : public LS_RPC::FiendServiceRpc
 {
 public:
     std::vector<std::string> GetFriendsList(uint32_t userid)
@@ -22,8 +22,8 @@ public:
 
     // 重写基类方法
     void GetFriendsList(::google::protobuf::RpcController* controller,
-                       const ::fixbug::GetFriendsListRequest* request,
-                       ::fixbug::GetFriendsListResponse* response,
+                       const ::LS_RPC::GetFriendsListRequest* request,
+                       ::LS_RPC::GetFriendsListResponse* response,
                        ::google::protobuf::Closure* done) override
     {
         uint32_t userid = request->userid();
@@ -45,7 +45,7 @@ int main(int argc, char **argv)
     
 
     // 调用框架的初始化操作
-    MprpcApplication::Init(argc, argv);
+    MyrpcApplication::Init(argc, argv);
 
     // provider是一个rpc网络服务对象。把UserService对象发布到rpc节点上
     RpcProvider provider;

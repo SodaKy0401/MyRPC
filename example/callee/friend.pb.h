@@ -54,7 +54,7 @@ struct TableStruct_friend_2eproto {
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_friend_2eproto;
-namespace fixbug {
+namespace LS_RPC {
 class GetFriendsListRequest;
 struct GetFriendsListRequestDefaultTypeInternal;
 extern GetFriendsListRequestDefaultTypeInternal _GetFriendsListRequest_default_instance_;
@@ -64,18 +64,18 @@ extern GetFriendsListResponseDefaultTypeInternal _GetFriendsListResponse_default
 class ResultCode;
 struct ResultCodeDefaultTypeInternal;
 extern ResultCodeDefaultTypeInternal _ResultCode_default_instance_;
-}  // namespace fixbug
+}  // namespace LS_RPC
 PROTOBUF_NAMESPACE_OPEN
-template<> ::fixbug::GetFriendsListRequest* Arena::CreateMaybeMessage<::fixbug::GetFriendsListRequest>(Arena*);
-template<> ::fixbug::GetFriendsListResponse* Arena::CreateMaybeMessage<::fixbug::GetFriendsListResponse>(Arena*);
-template<> ::fixbug::ResultCode* Arena::CreateMaybeMessage<::fixbug::ResultCode>(Arena*);
+template<> ::LS_RPC::GetFriendsListRequest* Arena::CreateMaybeMessage<::LS_RPC::GetFriendsListRequest>(Arena*);
+template<> ::LS_RPC::GetFriendsListResponse* Arena::CreateMaybeMessage<::LS_RPC::GetFriendsListResponse>(Arena*);
+template<> ::LS_RPC::ResultCode* Arena::CreateMaybeMessage<::LS_RPC::ResultCode>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
-namespace fixbug {
+namespace LS_RPC {
 
 // ===================================================================
 
 class ResultCode final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.ResultCode) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LS_RPC.ResultCode) */ {
  public:
   inline ResultCode() : ResultCode(nullptr) {}
   ~ResultCode() override;
@@ -176,7 +176,7 @@ class ResultCode final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.ResultCode";
+    return "LS_RPC.ResultCode";
   }
   protected:
   explicit ResultCode(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -222,7 +222,7 @@ class ResultCode final :
   void _internal_set_errcode(int32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:fixbug.ResultCode)
+  // @@protoc_insertion_point(class_scope:LS_RPC.ResultCode)
  private:
   class _Internal;
 
@@ -237,7 +237,7 @@ class ResultCode final :
 // -------------------------------------------------------------------
 
 class GetFriendsListRequest final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.GetFriendsListRequest) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LS_RPC.GetFriendsListRequest) */ {
  public:
   inline GetFriendsListRequest() : GetFriendsListRequest(nullptr) {}
   ~GetFriendsListRequest() override;
@@ -338,7 +338,7 @@ class GetFriendsListRequest final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.GetFriendsListRequest";
+    return "LS_RPC.GetFriendsListRequest";
   }
   protected:
   explicit GetFriendsListRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -369,7 +369,7 @@ class GetFriendsListRequest final :
   void _internal_set_userid(uint32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:fixbug.GetFriendsListRequest)
+  // @@protoc_insertion_point(class_scope:LS_RPC.GetFriendsListRequest)
  private:
   class _Internal;
 
@@ -383,7 +383,7 @@ class GetFriendsListRequest final :
 // -------------------------------------------------------------------
 
 class GetFriendsListResponse final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:fixbug.GetFriendsListResponse) */ {
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LS_RPC.GetFriendsListResponse) */ {
  public:
   inline GetFriendsListResponse() : GetFriendsListResponse(nullptr) {}
   ~GetFriendsListResponse() override;
@@ -484,7 +484,7 @@ class GetFriendsListResponse final :
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "fixbug.GetFriendsListResponse";
+    return "LS_RPC.GetFriendsListResponse";
   }
   protected:
   explicit GetFriendsListResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
@@ -531,25 +531,25 @@ class GetFriendsListResponse final :
   std::string* _internal_add_friends();
   public:
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   bool has_result() const;
   private:
   bool _internal_has_result() const;
   public:
   void clear_result();
-  const ::fixbug::ResultCode& result() const;
-  PROTOBUF_NODISCARD ::fixbug::ResultCode* release_result();
-  ::fixbug::ResultCode* mutable_result();
-  void set_allocated_result(::fixbug::ResultCode* result);
+  const ::LS_RPC::ResultCode& result() const;
+  PROTOBUF_NODISCARD ::LS_RPC::ResultCode* release_result();
+  ::LS_RPC::ResultCode* mutable_result();
+  void set_allocated_result(::LS_RPC::ResultCode* result);
   private:
-  const ::fixbug::ResultCode& _internal_result() const;
-  ::fixbug::ResultCode* _internal_mutable_result();
+  const ::LS_RPC::ResultCode& _internal_result() const;
+  ::LS_RPC::ResultCode* _internal_mutable_result();
   public:
   void unsafe_arena_set_allocated_result(
-      ::fixbug::ResultCode* result);
-  ::fixbug::ResultCode* unsafe_arena_release_result();
+      ::LS_RPC::ResultCode* result);
+  ::LS_RPC::ResultCode* unsafe_arena_release_result();
 
-  // @@protoc_insertion_point(class_scope:fixbug.GetFriendsListResponse)
+  // @@protoc_insertion_point(class_scope:LS_RPC.GetFriendsListResponse)
  private:
   class _Internal;
 
@@ -557,7 +557,7 @@ class GetFriendsListResponse final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string> friends_;
-  ::fixbug::ResultCode* result_;
+  ::LS_RPC::ResultCode* result_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_friend_2eproto;
 };
@@ -577,8 +577,8 @@ class FiendServiceRpc : public ::PROTOBUF_NAMESPACE_ID::Service {
   static const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* descriptor();
 
   virtual void GetFriendsList(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::fixbug::GetFriendsListRequest* request,
-                       ::fixbug::GetFriendsListResponse* response,
+                       const ::LS_RPC::GetFriendsListRequest* request,
+                       ::LS_RPC::GetFriendsListResponse* response,
                        ::google::protobuf::Closure* done);
 
   // implements Service ----------------------------------------------
@@ -610,8 +610,8 @@ class FiendServiceRpc_Stub : public FiendServiceRpc {
   // implements FiendServiceRpc ------------------------------------------
 
   void GetFriendsList(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                       const ::fixbug::GetFriendsListRequest* request,
-                       ::fixbug::GetFriendsListResponse* response,
+                       const ::LS_RPC::GetFriendsListRequest* request,
+                       ::LS_RPC::GetFriendsListResponse* response,
                        ::google::protobuf::Closure* done);
  private:
   ::PROTOBUF_NAMESPACE_ID::RpcChannel* channel_;
@@ -639,7 +639,7 @@ inline int32_t ResultCode::_internal_errcode() const {
   return errcode_;
 }
 inline int32_t ResultCode::errcode() const {
-  // @@protoc_insertion_point(field_get:fixbug.ResultCode.errcode)
+  // @@protoc_insertion_point(field_get:LS_RPC.ResultCode.errcode)
   return _internal_errcode();
 }
 inline void ResultCode::_internal_set_errcode(int32_t value) {
@@ -648,7 +648,7 @@ inline void ResultCode::_internal_set_errcode(int32_t value) {
 }
 inline void ResultCode::set_errcode(int32_t value) {
   _internal_set_errcode(value);
-  // @@protoc_insertion_point(field_set:fixbug.ResultCode.errcode)
+  // @@protoc_insertion_point(field_set:LS_RPC.ResultCode.errcode)
 }
 
 // bytes errmsg = 2;
@@ -656,7 +656,7 @@ inline void ResultCode::clear_errmsg() {
   errmsg_.ClearToEmpty();
 }
 inline const std::string& ResultCode::errmsg() const {
-  // @@protoc_insertion_point(field_get:fixbug.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_get:LS_RPC.ResultCode.errmsg)
   return _internal_errmsg();
 }
 template <typename ArgT0, typename... ArgT>
@@ -664,11 +664,11 @@ inline PROTOBUF_ALWAYS_INLINE
 void ResultCode::set_errmsg(ArgT0&& arg0, ArgT... args) {
  
  errmsg_.SetBytes(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:fixbug.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set:LS_RPC.ResultCode.errmsg)
 }
 inline std::string* ResultCode::mutable_errmsg() {
   std::string* _s = _internal_mutable_errmsg();
-  // @@protoc_insertion_point(field_mutable:fixbug.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_mutable:LS_RPC.ResultCode.errmsg)
   return _s;
 }
 inline const std::string& ResultCode::_internal_errmsg() const {
@@ -683,7 +683,7 @@ inline std::string* ResultCode::_internal_mutable_errmsg() {
   return errmsg_.Mutable(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArenaForAllocation());
 }
 inline std::string* ResultCode::release_errmsg() {
-  // @@protoc_insertion_point(field_release:fixbug.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_release:LS_RPC.ResultCode.errmsg)
   return errmsg_.Release(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArenaForAllocation());
 }
 inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
@@ -699,7 +699,7 @@ inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
     errmsg_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), "", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:fixbug.ResultCode.errmsg)
+  // @@protoc_insertion_point(field_set_allocated:LS_RPC.ResultCode.errmsg)
 }
 
 // -------------------------------------------------------------------
@@ -714,7 +714,7 @@ inline uint32_t GetFriendsListRequest::_internal_userid() const {
   return userid_;
 }
 inline uint32_t GetFriendsListRequest::userid() const {
-  // @@protoc_insertion_point(field_get:fixbug.GetFriendsListRequest.userid)
+  // @@protoc_insertion_point(field_get:LS_RPC.GetFriendsListRequest.userid)
   return _internal_userid();
 }
 inline void GetFriendsListRequest::_internal_set_userid(uint32_t value) {
@@ -723,14 +723,14 @@ inline void GetFriendsListRequest::_internal_set_userid(uint32_t value) {
 }
 inline void GetFriendsListRequest::set_userid(uint32_t value) {
   _internal_set_userid(value);
-  // @@protoc_insertion_point(field_set:fixbug.GetFriendsListRequest.userid)
+  // @@protoc_insertion_point(field_set:LS_RPC.GetFriendsListRequest.userid)
 }
 
 // -------------------------------------------------------------------
 
 // GetFriendsListResponse
 
-// .fixbug.ResultCode result = 1;
+// .LS_RPC.ResultCode result = 1;
 inline bool GetFriendsListResponse::_internal_has_result() const {
   return this != internal_default_instance() && result_ != nullptr;
 }
@@ -743,17 +743,17 @@ inline void GetFriendsListResponse::clear_result() {
   }
   result_ = nullptr;
 }
-inline const ::fixbug::ResultCode& GetFriendsListResponse::_internal_result() const {
-  const ::fixbug::ResultCode* p = result_;
-  return p != nullptr ? *p : reinterpret_cast<const ::fixbug::ResultCode&>(
-      ::fixbug::_ResultCode_default_instance_);
+inline const ::LS_RPC::ResultCode& GetFriendsListResponse::_internal_result() const {
+  const ::LS_RPC::ResultCode* p = result_;
+  return p != nullptr ? *p : reinterpret_cast<const ::LS_RPC::ResultCode&>(
+      ::LS_RPC::_ResultCode_default_instance_);
 }
-inline const ::fixbug::ResultCode& GetFriendsListResponse::result() const {
-  // @@protoc_insertion_point(field_get:fixbug.GetFriendsListResponse.result)
+inline const ::LS_RPC::ResultCode& GetFriendsListResponse::result() const {
+  // @@protoc_insertion_point(field_get:LS_RPC.GetFriendsListResponse.result)
   return _internal_result();
 }
 inline void GetFriendsListResponse::unsafe_arena_set_allocated_result(
-    ::fixbug::ResultCode* result) {
+    ::LS_RPC::ResultCode* result) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(result_);
   }
@@ -763,11 +763,11 @@ inline void GetFriendsListResponse::unsafe_arena_set_allocated_result(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:fixbug.GetFriendsListResponse.result)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:LS_RPC.GetFriendsListResponse.result)
 }
-inline ::fixbug::ResultCode* GetFriendsListResponse::release_result() {
+inline ::LS_RPC::ResultCode* GetFriendsListResponse::release_result() {
   
-  ::fixbug::ResultCode* temp = result_;
+  ::LS_RPC::ResultCode* temp = result_;
   result_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
@@ -780,34 +780,34 @@ inline ::fixbug::ResultCode* GetFriendsListResponse::release_result() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::fixbug::ResultCode* GetFriendsListResponse::unsafe_arena_release_result() {
-  // @@protoc_insertion_point(field_release:fixbug.GetFriendsListResponse.result)
+inline ::LS_RPC::ResultCode* GetFriendsListResponse::unsafe_arena_release_result() {
+  // @@protoc_insertion_point(field_release:LS_RPC.GetFriendsListResponse.result)
   
-  ::fixbug::ResultCode* temp = result_;
+  ::LS_RPC::ResultCode* temp = result_;
   result_ = nullptr;
   return temp;
 }
-inline ::fixbug::ResultCode* GetFriendsListResponse::_internal_mutable_result() {
+inline ::LS_RPC::ResultCode* GetFriendsListResponse::_internal_mutable_result() {
   
   if (result_ == nullptr) {
-    auto* p = CreateMaybeMessage<::fixbug::ResultCode>(GetArenaForAllocation());
+    auto* p = CreateMaybeMessage<::LS_RPC::ResultCode>(GetArenaForAllocation());
     result_ = p;
   }
   return result_;
 }
-inline ::fixbug::ResultCode* GetFriendsListResponse::mutable_result() {
-  ::fixbug::ResultCode* _msg = _internal_mutable_result();
-  // @@protoc_insertion_point(field_mutable:fixbug.GetFriendsListResponse.result)
+inline ::LS_RPC::ResultCode* GetFriendsListResponse::mutable_result() {
+  ::LS_RPC::ResultCode* _msg = _internal_mutable_result();
+  // @@protoc_insertion_point(field_mutable:LS_RPC.GetFriendsListResponse.result)
   return _msg;
 }
-inline void GetFriendsListResponse::set_allocated_result(::fixbug::ResultCode* result) {
+inline void GetFriendsListResponse::set_allocated_result(::LS_RPC::ResultCode* result) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete result_;
   }
   if (result) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::fixbug::ResultCode>::GetOwningArena(result);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper<::LS_RPC::ResultCode>::GetOwningArena(result);
     if (message_arena != submessage_arena) {
       result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, result, submessage_arena);
@@ -817,7 +817,7 @@ inline void GetFriendsListResponse::set_allocated_result(::fixbug::ResultCode* r
     
   }
   result_ = result;
-  // @@protoc_insertion_point(field_set_allocated:fixbug.GetFriendsListResponse.result)
+  // @@protoc_insertion_point(field_set_allocated:LS_RPC.GetFriendsListResponse.result)
 }
 
 // repeated bytes friends = 2;
@@ -832,66 +832,66 @@ inline void GetFriendsListResponse::clear_friends() {
 }
 inline std::string* GetFriendsListResponse::add_friends() {
   std::string* _s = _internal_add_friends();
-  // @@protoc_insertion_point(field_add_mutable:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_add_mutable:LS_RPC.GetFriendsListResponse.friends)
   return _s;
 }
 inline const std::string& GetFriendsListResponse::_internal_friends(int index) const {
   return friends_.Get(index);
 }
 inline const std::string& GetFriendsListResponse::friends(int index) const {
-  // @@protoc_insertion_point(field_get:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_get:LS_RPC.GetFriendsListResponse.friends)
   return _internal_friends(index);
 }
 inline std::string* GetFriendsListResponse::mutable_friends(int index) {
-  // @@protoc_insertion_point(field_mutable:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_mutable:LS_RPC.GetFriendsListResponse.friends)
   return friends_.Mutable(index);
 }
 inline void GetFriendsListResponse::set_friends(int index, const std::string& value) {
   friends_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_set:LS_RPC.GetFriendsListResponse.friends)
 }
 inline void GetFriendsListResponse::set_friends(int index, std::string&& value) {
   friends_.Mutable(index)->assign(std::move(value));
-  // @@protoc_insertion_point(field_set:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_set:LS_RPC.GetFriendsListResponse.friends)
 }
 inline void GetFriendsListResponse::set_friends(int index, const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   friends_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_set_char:LS_RPC.GetFriendsListResponse.friends)
 }
 inline void GetFriendsListResponse::set_friends(int index, const void* value, size_t size) {
   friends_.Mutable(index)->assign(
     reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_set_pointer:LS_RPC.GetFriendsListResponse.friends)
 }
 inline std::string* GetFriendsListResponse::_internal_add_friends() {
   return friends_.Add();
 }
 inline void GetFriendsListResponse::add_friends(const std::string& value) {
   friends_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_add:LS_RPC.GetFriendsListResponse.friends)
 }
 inline void GetFriendsListResponse::add_friends(std::string&& value) {
   friends_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_add:LS_RPC.GetFriendsListResponse.friends)
 }
 inline void GetFriendsListResponse::add_friends(const char* value) {
   GOOGLE_DCHECK(value != nullptr);
   friends_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_add_char:LS_RPC.GetFriendsListResponse.friends)
 }
 inline void GetFriendsListResponse::add_friends(const void* value, size_t size) {
   friends_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_add_pointer:LS_RPC.GetFriendsListResponse.friends)
 }
 inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>&
 GetFriendsListResponse::friends() const {
-  // @@protoc_insertion_point(field_list:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_list:LS_RPC.GetFriendsListResponse.friends)
   return friends_;
 }
 inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField<std::string>*
 GetFriendsListResponse::mutable_friends() {
-  // @@protoc_insertion_point(field_mutable_list:fixbug.GetFriendsListResponse.friends)
+  // @@protoc_insertion_point(field_mutable_list:LS_RPC.GetFriendsListResponse.friends)
   return &friends_;
 }
 
@@ -905,7 +905,7 @@ GetFriendsListResponse::mutable_friends() {
 
 // @@protoc_insertion_point(namespace_scope)
 
-}  // namespace fixbug
+}  // namespace LS_RPC
 
 // @@protoc_insertion_point(global_scope)
 

@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ls/RPC/src/Myrpcapplication.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o"
+  "/home/ls/RPC/src/Myrpcchannel.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o"
+  "/home/ls/RPC/src/Myrpcconfig.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o"
+  "/home/ls/RPC/src/Myrpccontroller.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o"
   "/home/ls/RPC/src/logger.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/logger.cc.o"
-  "/home/ls/RPC/src/mprpcapplication.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.o"
-  "/home/ls/RPC/src/mprpcchannel.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.o"
-  "/home/ls/RPC/src/mprpcconfig.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.o"
-  "/home/ls/RPC/src/mprpccontroller.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.o"
   "/home/ls/RPC/src/rpcheader.pb.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o"
   "/home/ls/RPC/src/rpcprovider.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/rpcprovider.cc.o"
   "/home/ls/RPC/src/zookeeperutil.cc" "/home/ls/RPC/build/src/CMakeFiles/lsrpc.dir/zookeeperutil.cc.o"

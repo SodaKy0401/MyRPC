@@ -16,7 +16,7 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
-namespace fixbug {
+namespace LS_RPC {
 constexpr ResultCode::ResultCode(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : errmsg_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -83,82 +83,82 @@ struct RegisterResponseDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RegisterResponseDefaultTypeInternal _RegisterResponse_default_instance_;
-}  // namespace fixbug
+}  // namespace LS_RPC
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_user_2eproto[5];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_user_2eproto = nullptr;
 static const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* file_level_service_descriptors_user_2eproto[1];
 
 const uint32_t TableStruct_user_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::ResultCode, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::ResultCode, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::ResultCode, errcode_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::ResultCode, errmsg_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::ResultCode, errcode_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::ResultCode, errmsg_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::LoginRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, name_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::LoginRequest, pwd_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::LoginRequest, name_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::LoginRequest, pwd_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::LoginResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::LoginResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::LoginResponse, result_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::LoginResponse, sucess_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::LoginResponse, result_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::LoginResponse, sucess_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterRequest, id_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterRequest, name_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterRequest, pwd_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterRequest, id_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterRequest, name_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterRequest, pwd_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterResponse, result_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::RegisterResponse, sucess_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterResponse, result_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::RegisterResponse, sucess_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::fixbug::ResultCode)},
-  { 8, -1, -1, sizeof(::fixbug::LoginRequest)},
-  { 16, -1, -1, sizeof(::fixbug::LoginResponse)},
-  { 24, -1, -1, sizeof(::fixbug::RegisterRequest)},
-  { 33, -1, -1, sizeof(::fixbug::RegisterResponse)},
+  { 0, -1, -1, sizeof(::LS_RPC::ResultCode)},
+  { 8, -1, -1, sizeof(::LS_RPC::LoginRequest)},
+  { 16, -1, -1, sizeof(::LS_RPC::LoginResponse)},
+  { 24, -1, -1, sizeof(::LS_RPC::RegisterRequest)},
+  { 33, -1, -1, sizeof(::LS_RPC::RegisterResponse)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_ResultCode_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_LoginRequest_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_LoginResponse_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_RegisterRequest_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_RegisterResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_ResultCode_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_LoginRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_LoginResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_RegisterRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_RegisterResponse_default_instance_),
 };
 
 const char descriptor_table_protodef_user_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\nuser.proto\022\006fixbug\"-\n\nResultCode\022\017\n\007er"
+  "\n\nuser.proto\022\006LS_RPC\"-\n\nResultCode\022\017\n\007er"
   "rcode\030\001 \001(\005\022\016\n\006errmsg\030\002 \001(\014\")\n\014LoginRequ"
   "est\022\014\n\004name\030\001 \001(\014\022\013\n\003pwd\030\002 \001(\014\"C\n\rLoginR"
-  "esponse\022\"\n\006result\030\001 \001(\0132\022.fixbug.ResultC"
+  "esponse\022\"\n\006result\030\001 \001(\0132\022.LS_RPC.ResultC"
   "ode\022\016\n\006sucess\030\002 \001(\010\"8\n\017RegisterRequest\022\n"
   "\n\002id\030\001 \001(\r\022\014\n\004name\030\002 \001(\014\022\013\n\003pwd\030\003 \001(\014\"F\n"
-  "\020RegisterResponse\022\"\n\006result\030\001 \001(\0132\022.fixb"
-  "ug.ResultCode\022\016\n\006sucess\030\002 \001(\0102\205\001\n\016UserSe"
-  "rviceRpc\0224\n\005Login\022\024.fixbug.LoginRequest\032"
-  "\025.fixbug.LoginResponse\022=\n\010Register\022\027.fix"
-  "bug.RegisterRequest\032\030.fixbug.RegisterRes"
+  "\020RegisterResponse\022\"\n\006result\030\001 \001(\0132\022.LS_R"
+  "PC.ResultCode\022\016\n\006sucess\030\002 \001(\0102\205\001\n\016UserSe"
+  "rviceRpc\0224\n\005Login\022\024.LS_RPC.LoginRequest\032"
+  "\025.LS_RPC.LoginResponse\022=\n\010Register\022\027.LS_"
+  "RPC.RegisterRequest\032\030.LS_RPC.RegisterRes"
   "ponseB\003\200\001\001b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_user_2eproto_once;
@@ -174,7 +174,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_user_2eproto(&descriptor_table_user_2eproto);
-namespace fixbug {
+namespace LS_RPC {
 
 // ===================================================================
 
@@ -189,7 +189,7 @@ ResultCode::ResultCode(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.ResultCode)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.ResultCode)
 }
 ResultCode::ResultCode(const ResultCode& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -203,7 +203,7 @@ ResultCode::ResultCode(const ResultCode& from)
       GetArenaForAllocation());
   }
   errcode_ = from.errcode_;
-  // @@protoc_insertion_point(copy_constructor:fixbug.ResultCode)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.ResultCode)
 }
 
 inline void ResultCode::SharedCtor() {
@@ -215,7 +215,7 @@ errcode_ = 0;
 }
 
 ResultCode::~ResultCode() {
-  // @@protoc_insertion_point(destructor:fixbug.ResultCode)
+  // @@protoc_insertion_point(destructor:LS_RPC.ResultCode)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -237,7 +237,7 @@ void ResultCode::SetCachedSize(int size) const {
 }
 
 void ResultCode::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.ResultCode)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.ResultCode)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -295,7 +295,7 @@ failure:
 
 uint8_t* ResultCode::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.ResultCode)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.ResultCode)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -315,12 +315,12 @@ uint8_t* ResultCode::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.ResultCode)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.ResultCode)
   return target;
 }
 
 size_t ResultCode::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.ResultCode)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.ResultCode)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -356,7 +356,7 @@ void ResultCode::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void ResultCode::MergeFrom(const ResultCode& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.ResultCode)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.ResultCode)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -371,7 +371,7 @@ void ResultCode::MergeFrom(const ResultCode& from) {
 }
 
 void ResultCode::CopyFrom(const ResultCode& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.ResultCode)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.ResultCode)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -413,7 +413,7 @@ LoginRequest::LoginRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.LoginRequest)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.LoginRequest)
 }
 LoginRequest::LoginRequest(const LoginRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -434,7 +434,7 @@ LoginRequest::LoginRequest(const LoginRequest& from)
     pwd_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_pwd(), 
       GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:fixbug.LoginRequest)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.LoginRequest)
 }
 
 inline void LoginRequest::SharedCtor() {
@@ -449,7 +449,7 @@ pwd_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyI
 }
 
 LoginRequest::~LoginRequest() {
-  // @@protoc_insertion_point(destructor:fixbug.LoginRequest)
+  // @@protoc_insertion_point(destructor:LS_RPC.LoginRequest)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -472,7 +472,7 @@ void LoginRequest::SetCachedSize(int size) const {
 }
 
 void LoginRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.LoginRequest)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.LoginRequest)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -531,7 +531,7 @@ failure:
 
 uint8_t* LoginRequest::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.LoginRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.LoginRequest)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -551,12 +551,12 @@ uint8_t* LoginRequest::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.LoginRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.LoginRequest)
   return target;
 }
 
 size_t LoginRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.LoginRequest)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.LoginRequest)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -594,7 +594,7 @@ void LoginRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void LoginRequest::MergeFrom(const LoginRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.LoginRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.LoginRequest)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -609,7 +609,7 @@ void LoginRequest::MergeFrom(const LoginRequest& from) {
 }
 
 void LoginRequest::CopyFrom(const LoginRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.LoginRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.LoginRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -646,10 +646,10 @@ void LoginRequest::InternalSwap(LoginRequest* other) {
 
 class LoginResponse::_Internal {
  public:
-  static const ::fixbug::ResultCode& result(const LoginResponse* msg);
+  static const ::LS_RPC::ResultCode& result(const LoginResponse* msg);
 };
 
-const ::fixbug::ResultCode&
+const ::LS_RPC::ResultCode&
 LoginResponse::_Internal::result(const LoginResponse* msg) {
   return *msg->result_;
 }
@@ -660,18 +660,18 @@ LoginResponse::LoginResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.LoginResponse)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.LoginResponse)
 }
 LoginResponse::LoginResponse(const LoginResponse& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_result()) {
-    result_ = new ::fixbug::ResultCode(*from.result_);
+    result_ = new ::LS_RPC::ResultCode(*from.result_);
   } else {
     result_ = nullptr;
   }
   sucess_ = from.sucess_;
-  // @@protoc_insertion_point(copy_constructor:fixbug.LoginResponse)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.LoginResponse)
 }
 
 inline void LoginResponse::SharedCtor() {
@@ -682,7 +682,7 @@ inline void LoginResponse::SharedCtor() {
 }
 
 LoginResponse::~LoginResponse() {
-  // @@protoc_insertion_point(destructor:fixbug.LoginResponse)
+  // @@protoc_insertion_point(destructor:LS_RPC.LoginResponse)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -704,7 +704,7 @@ void LoginResponse::SetCachedSize(int size) const {
 }
 
 void LoginResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.LoginResponse)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.LoginResponse)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -723,7 +723,7 @@ const char* LoginResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
     uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .fixbug.ResultCode result = 1;
+      // .LS_RPC.ResultCode result = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_result(), ptr);
@@ -764,11 +764,11 @@ failure:
 
 uint8_t* LoginResponse::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.LoginResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.LoginResponse)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   if (this->_internal_has_result()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -786,19 +786,19 @@ uint8_t* LoginResponse::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.LoginResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.LoginResponse)
   return target;
 }
 
 size_t LoginResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.LoginResponse)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.LoginResponse)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   if (this->_internal_has_result()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -827,13 +827,13 @@ void LoginResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void LoginResponse::MergeFrom(const LoginResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.LoginResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.LoginResponse)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_result()) {
-    _internal_mutable_result()->::fixbug::ResultCode::MergeFrom(from._internal_result());
+    _internal_mutable_result()->::LS_RPC::ResultCode::MergeFrom(from._internal_result());
   }
   if (from._internal_sucess() != 0) {
     _internal_set_sucess(from._internal_sucess());
@@ -842,7 +842,7 @@ void LoginResponse::MergeFrom(const LoginResponse& from) {
 }
 
 void LoginResponse::CopyFrom(const LoginResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.LoginResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.LoginResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -882,7 +882,7 @@ RegisterRequest::RegisterRequest(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.RegisterRequest)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.RegisterRequest)
 }
 RegisterRequest::RegisterRequest(const RegisterRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -904,7 +904,7 @@ RegisterRequest::RegisterRequest(const RegisterRequest& from)
       GetArenaForAllocation());
   }
   id_ = from.id_;
-  // @@protoc_insertion_point(copy_constructor:fixbug.RegisterRequest)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.RegisterRequest)
 }
 
 inline void RegisterRequest::SharedCtor() {
@@ -920,7 +920,7 @@ id_ = 0u;
 }
 
 RegisterRequest::~RegisterRequest() {
-  // @@protoc_insertion_point(destructor:fixbug.RegisterRequest)
+  // @@protoc_insertion_point(destructor:LS_RPC.RegisterRequest)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -943,7 +943,7 @@ void RegisterRequest::SetCachedSize(int size) const {
 }
 
 void RegisterRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.RegisterRequest)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.RegisterRequest)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1011,7 +1011,7 @@ failure:
 
 uint8_t* RegisterRequest::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.RegisterRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.RegisterRequest)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1037,12 +1037,12 @@ uint8_t* RegisterRequest::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.RegisterRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.RegisterRequest)
   return target;
 }
 
 size_t RegisterRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.RegisterRequest)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.RegisterRequest)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1085,7 +1085,7 @@ void RegisterRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void RegisterRequest::MergeFrom(const RegisterRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.RegisterRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.RegisterRequest)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1103,7 +1103,7 @@ void RegisterRequest::MergeFrom(const RegisterRequest& from) {
 }
 
 void RegisterRequest::CopyFrom(const RegisterRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.RegisterRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.RegisterRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1141,10 +1141,10 @@ void RegisterRequest::InternalSwap(RegisterRequest* other) {
 
 class RegisterResponse::_Internal {
  public:
-  static const ::fixbug::ResultCode& result(const RegisterResponse* msg);
+  static const ::LS_RPC::ResultCode& result(const RegisterResponse* msg);
 };
 
-const ::fixbug::ResultCode&
+const ::LS_RPC::ResultCode&
 RegisterResponse::_Internal::result(const RegisterResponse* msg) {
   return *msg->result_;
 }
@@ -1155,18 +1155,18 @@ RegisterResponse::RegisterResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.RegisterResponse)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.RegisterResponse)
 }
 RegisterResponse::RegisterResponse(const RegisterResponse& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_result()) {
-    result_ = new ::fixbug::ResultCode(*from.result_);
+    result_ = new ::LS_RPC::ResultCode(*from.result_);
   } else {
     result_ = nullptr;
   }
   sucess_ = from.sucess_;
-  // @@protoc_insertion_point(copy_constructor:fixbug.RegisterResponse)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.RegisterResponse)
 }
 
 inline void RegisterResponse::SharedCtor() {
@@ -1177,7 +1177,7 @@ inline void RegisterResponse::SharedCtor() {
 }
 
 RegisterResponse::~RegisterResponse() {
-  // @@protoc_insertion_point(destructor:fixbug.RegisterResponse)
+  // @@protoc_insertion_point(destructor:LS_RPC.RegisterResponse)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -1199,7 +1199,7 @@ void RegisterResponse::SetCachedSize(int size) const {
 }
 
 void RegisterResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.RegisterResponse)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.RegisterResponse)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1218,7 +1218,7 @@ const char* RegisterResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .fixbug.ResultCode result = 1;
+      // .LS_RPC.ResultCode result = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_result(), ptr);
@@ -1259,11 +1259,11 @@ failure:
 
 uint8_t* RegisterResponse::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.RegisterResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.RegisterResponse)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   if (this->_internal_has_result()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -1281,19 +1281,19 @@ uint8_t* RegisterResponse::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.RegisterResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.RegisterResponse)
   return target;
 }
 
 size_t RegisterResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.RegisterResponse)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.RegisterResponse)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   if (this->_internal_has_result()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1322,13 +1322,13 @@ void RegisterResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void RegisterResponse::MergeFrom(const RegisterResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.RegisterResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.RegisterResponse)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_result()) {
-    _internal_mutable_result()->::fixbug::ResultCode::MergeFrom(from._internal_result());
+    _internal_mutable_result()->::LS_RPC::ResultCode::MergeFrom(from._internal_result());
   }
   if (from._internal_sucess() != 0) {
     _internal_set_sucess(from._internal_sucess());
@@ -1337,7 +1337,7 @@ void RegisterResponse::MergeFrom(const RegisterResponse& from) {
 }
 
 void RegisterResponse::CopyFrom(const RegisterResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.RegisterResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.RegisterResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1378,16 +1378,16 @@ const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* UserServiceRpc::GetDescriptor(
 }
 
 void UserServiceRpc::Login(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                         const ::fixbug::LoginRequest*,
-                         ::fixbug::LoginResponse*,
+                         const ::LS_RPC::LoginRequest*,
+                         ::LS_RPC::LoginResponse*,
                          ::google::protobuf::Closure* done) {
   controller->SetFailed("Method Login() not implemented.");
   done->Run();
 }
 
 void UserServiceRpc::Register(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                         const ::fixbug::RegisterRequest*,
-                         ::fixbug::RegisterResponse*,
+                         const ::LS_RPC::RegisterRequest*,
+                         ::LS_RPC::RegisterResponse*,
                          ::google::protobuf::Closure* done) {
   controller->SetFailed("Method Register() not implemented.");
   done->Run();
@@ -1402,17 +1402,17 @@ void UserServiceRpc::CallMethod(const ::PROTOBUF_NAMESPACE_ID::MethodDescriptor*
   switch(method->index()) {
     case 0:
       Login(controller,
-             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::fixbug::LoginRequest*>(
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::LS_RPC::LoginRequest*>(
                  request),
-             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::fixbug::LoginResponse*>(
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::LS_RPC::LoginResponse*>(
                  response),
              done);
       break;
     case 1:
       Register(controller,
-             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::fixbug::RegisterRequest*>(
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::LS_RPC::RegisterRequest*>(
                  request),
-             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::fixbug::RegisterResponse*>(
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::LS_RPC::RegisterResponse*>(
                  response),
              done);
       break;
@@ -1427,9 +1427,9 @@ const ::PROTOBUF_NAMESPACE_ID::Message& UserServiceRpc::GetRequestPrototype(
   GOOGLE_DCHECK_EQ(method->service(), descriptor());
   switch(method->index()) {
     case 0:
-      return ::fixbug::LoginRequest::default_instance();
+      return ::LS_RPC::LoginRequest::default_instance();
     case 1:
-      return ::fixbug::RegisterRequest::default_instance();
+      return ::LS_RPC::RegisterRequest::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *::PROTOBUF_NAMESPACE_ID::MessageFactory::generated_factory()
@@ -1442,9 +1442,9 @@ const ::PROTOBUF_NAMESPACE_ID::Message& UserServiceRpc::GetResponsePrototype(
   GOOGLE_DCHECK_EQ(method->service(), descriptor());
   switch(method->index()) {
     case 0:
-      return ::fixbug::LoginResponse::default_instance();
+      return ::LS_RPC::LoginResponse::default_instance();
     case 1:
-      return ::fixbug::RegisterResponse::default_instance();
+      return ::LS_RPC::RegisterResponse::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *::PROTOBUF_NAMESPACE_ID::MessageFactory::generated_factory()
@@ -1464,37 +1464,37 @@ UserServiceRpc_Stub::~UserServiceRpc_Stub() {
 }
 
 void UserServiceRpc_Stub::Login(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                              const ::fixbug::LoginRequest* request,
-                              ::fixbug::LoginResponse* response,
+                              const ::LS_RPC::LoginRequest* request,
+                              ::LS_RPC::LoginResponse* response,
                               ::google::protobuf::Closure* done) {
   channel_->CallMethod(descriptor()->method(0),
                        controller, request, response, done);
 }
 void UserServiceRpc_Stub::Register(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                              const ::fixbug::RegisterRequest* request,
-                              ::fixbug::RegisterResponse* response,
+                              const ::LS_RPC::RegisterRequest* request,
+                              ::LS_RPC::RegisterResponse* response,
                               ::google::protobuf::Closure* done) {
   channel_->CallMethod(descriptor()->method(1),
                        controller, request, response, done);
 }
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace fixbug
+}  // namespace LS_RPC
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::fixbug::ResultCode* Arena::CreateMaybeMessage< ::fixbug::ResultCode >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::ResultCode >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::ResultCode* Arena::CreateMaybeMessage< ::LS_RPC::ResultCode >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::ResultCode >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fixbug::LoginRequest* Arena::CreateMaybeMessage< ::fixbug::LoginRequest >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::LoginRequest >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::LoginRequest* Arena::CreateMaybeMessage< ::LS_RPC::LoginRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::LoginRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fixbug::LoginResponse* Arena::CreateMaybeMessage< ::fixbug::LoginResponse >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::LoginResponse >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::LoginResponse* Arena::CreateMaybeMessage< ::LS_RPC::LoginResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::LoginResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fixbug::RegisterRequest* Arena::CreateMaybeMessage< ::fixbug::RegisterRequest >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::RegisterRequest >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::RegisterRequest* Arena::CreateMaybeMessage< ::LS_RPC::RegisterRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::RegisterRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fixbug::RegisterResponse* Arena::CreateMaybeMessage< ::fixbug::RegisterResponse >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::RegisterResponse >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::RegisterResponse* Arena::CreateMaybeMessage< ::LS_RPC::RegisterResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::RegisterResponse >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

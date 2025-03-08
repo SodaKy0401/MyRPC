@@ -125,6 +125,114 @@ lsrpc/fast:
 	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/build
 .PHONY : lsrpc/fast
 
+Myrpcapplication.o: Myrpcapplication.cc.o
+
+.PHONY : Myrpcapplication.o
+
+# target to build an object file
+Myrpcapplication.cc.o:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o
+.PHONY : Myrpcapplication.cc.o
+
+Myrpcapplication.i: Myrpcapplication.cc.i
+
+.PHONY : Myrpcapplication.i
+
+# target to preprocess a source file
+Myrpcapplication.cc.i:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.i
+.PHONY : Myrpcapplication.cc.i
+
+Myrpcapplication.s: Myrpcapplication.cc.s
+
+.PHONY : Myrpcapplication.s
+
+# target to generate assembly for a file
+Myrpcapplication.cc.s:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.s
+.PHONY : Myrpcapplication.cc.s
+
+Myrpcchannel.o: Myrpcchannel.cc.o
+
+.PHONY : Myrpcchannel.o
+
+# target to build an object file
+Myrpcchannel.cc.o:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o
+.PHONY : Myrpcchannel.cc.o
+
+Myrpcchannel.i: Myrpcchannel.cc.i
+
+.PHONY : Myrpcchannel.i
+
+# target to preprocess a source file
+Myrpcchannel.cc.i:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.i
+.PHONY : Myrpcchannel.cc.i
+
+Myrpcchannel.s: Myrpcchannel.cc.s
+
+.PHONY : Myrpcchannel.s
+
+# target to generate assembly for a file
+Myrpcchannel.cc.s:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.s
+.PHONY : Myrpcchannel.cc.s
+
+Myrpcconfig.o: Myrpcconfig.cc.o
+
+.PHONY : Myrpcconfig.o
+
+# target to build an object file
+Myrpcconfig.cc.o:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o
+.PHONY : Myrpcconfig.cc.o
+
+Myrpcconfig.i: Myrpcconfig.cc.i
+
+.PHONY : Myrpcconfig.i
+
+# target to preprocess a source file
+Myrpcconfig.cc.i:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.i
+.PHONY : Myrpcconfig.cc.i
+
+Myrpcconfig.s: Myrpcconfig.cc.s
+
+.PHONY : Myrpcconfig.s
+
+# target to generate assembly for a file
+Myrpcconfig.cc.s:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.s
+.PHONY : Myrpcconfig.cc.s
+
+Myrpccontroller.o: Myrpccontroller.cc.o
+
+.PHONY : Myrpccontroller.o
+
+# target to build an object file
+Myrpccontroller.cc.o:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o
+.PHONY : Myrpccontroller.cc.o
+
+Myrpccontroller.i: Myrpccontroller.cc.i
+
+.PHONY : Myrpccontroller.i
+
+# target to preprocess a source file
+Myrpccontroller.cc.i:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.i
+.PHONY : Myrpccontroller.cc.i
+
+Myrpccontroller.s: Myrpccontroller.cc.s
+
+.PHONY : Myrpccontroller.s
+
+# target to generate assembly for a file
+Myrpccontroller.cc.s:
+	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.s
+.PHONY : Myrpccontroller.cc.s
+
 logger.o: logger.cc.o
 
 .PHONY : logger.o
@@ -151,114 +259,6 @@ logger.s: logger.cc.s
 logger.cc.s:
 	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/logger.cc.s
 .PHONY : logger.cc.s
-
-mprpcapplication.o: mprpcapplication.cc.o
-
-.PHONY : mprpcapplication.o
-
-# target to build an object file
-mprpcapplication.cc.o:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.o
-.PHONY : mprpcapplication.cc.o
-
-mprpcapplication.i: mprpcapplication.cc.i
-
-.PHONY : mprpcapplication.i
-
-# target to preprocess a source file
-mprpcapplication.cc.i:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.i
-.PHONY : mprpcapplication.cc.i
-
-mprpcapplication.s: mprpcapplication.cc.s
-
-.PHONY : mprpcapplication.s
-
-# target to generate assembly for a file
-mprpcapplication.cc.s:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.s
-.PHONY : mprpcapplication.cc.s
-
-mprpcchannel.o: mprpcchannel.cc.o
-
-.PHONY : mprpcchannel.o
-
-# target to build an object file
-mprpcchannel.cc.o:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.o
-.PHONY : mprpcchannel.cc.o
-
-mprpcchannel.i: mprpcchannel.cc.i
-
-.PHONY : mprpcchannel.i
-
-# target to preprocess a source file
-mprpcchannel.cc.i:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.i
-.PHONY : mprpcchannel.cc.i
-
-mprpcchannel.s: mprpcchannel.cc.s
-
-.PHONY : mprpcchannel.s
-
-# target to generate assembly for a file
-mprpcchannel.cc.s:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.s
-.PHONY : mprpcchannel.cc.s
-
-mprpcconfig.o: mprpcconfig.cc.o
-
-.PHONY : mprpcconfig.o
-
-# target to build an object file
-mprpcconfig.cc.o:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.o
-.PHONY : mprpcconfig.cc.o
-
-mprpcconfig.i: mprpcconfig.cc.i
-
-.PHONY : mprpcconfig.i
-
-# target to preprocess a source file
-mprpcconfig.cc.i:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.i
-.PHONY : mprpcconfig.cc.i
-
-mprpcconfig.s: mprpcconfig.cc.s
-
-.PHONY : mprpcconfig.s
-
-# target to generate assembly for a file
-mprpcconfig.cc.s:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.s
-.PHONY : mprpcconfig.cc.s
-
-mprpccontroller.o: mprpccontroller.cc.o
-
-.PHONY : mprpccontroller.o
-
-# target to build an object file
-mprpccontroller.cc.o:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.o
-.PHONY : mprpccontroller.cc.o
-
-mprpccontroller.i: mprpccontroller.cc.i
-
-.PHONY : mprpccontroller.i
-
-# target to preprocess a source file
-mprpccontroller.cc.i:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.i
-.PHONY : mprpccontroller.cc.i
-
-mprpccontroller.s: mprpccontroller.cc.s
-
-.PHONY : mprpccontroller.s
-
-# target to generate assembly for a file
-mprpccontroller.cc.s:
-	cd /home/ls/RPC/build && $(MAKE) -f src/CMakeFiles/lsrpc.dir/build.make src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.s
-.PHONY : mprpccontroller.cc.s
 
 rpcheader.pb.o: rpcheader.pb.cc.o
 
@@ -350,21 +350,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lsrpc"
+	@echo "... Myrpcapplication.o"
+	@echo "... Myrpcapplication.i"
+	@echo "... Myrpcapplication.s"
+	@echo "... Myrpcchannel.o"
+	@echo "... Myrpcchannel.i"
+	@echo "... Myrpcchannel.s"
+	@echo "... Myrpcconfig.o"
+	@echo "... Myrpcconfig.i"
+	@echo "... Myrpcconfig.s"
+	@echo "... Myrpccontroller.o"
+	@echo "... Myrpccontroller.i"
+	@echo "... Myrpccontroller.s"
 	@echo "... logger.o"
 	@echo "... logger.i"
 	@echo "... logger.s"
-	@echo "... mprpcapplication.o"
-	@echo "... mprpcapplication.i"
-	@echo "... mprpcapplication.s"
-	@echo "... mprpcchannel.o"
-	@echo "... mprpcchannel.i"
-	@echo "... mprpcchannel.s"
-	@echo "... mprpcconfig.o"
-	@echo "... mprpcconfig.i"
-	@echo "... mprpcconfig.s"
-	@echo "... mprpccontroller.o"
-	@echo "... mprpccontroller.i"
-	@echo "... mprpccontroller.s"
 	@echo "... rpcheader.pb.o"
 	@echo "... rpcheader.pb.i"
 	@echo "... rpcheader.pb.s"

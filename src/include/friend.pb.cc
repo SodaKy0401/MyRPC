@@ -16,7 +16,7 @@
 #include <google/protobuf/port_def.inc>
 
 PROTOBUF_PRAGMA_INIT_SEG
-namespace fixbug {
+namespace LS_RPC {
 constexpr ResultCode::ResultCode(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : errmsg_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -55,56 +55,56 @@ struct GetFriendsListResponseDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GetFriendsListResponseDefaultTypeInternal _GetFriendsListResponse_default_instance_;
-}  // namespace fixbug
+}  // namespace LS_RPC
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_friend_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_friend_2eproto = nullptr;
 static const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* file_level_service_descriptors_friend_2eproto[1];
 
 const uint32_t TableStruct_friend_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::ResultCode, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::ResultCode, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::ResultCode, errcode_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::ResultCode, errmsg_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::ResultCode, errcode_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::ResultCode, errmsg_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::GetFriendsListRequest, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::GetFriendsListRequest, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::GetFriendsListRequest, userid_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::GetFriendsListRequest, userid_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::fixbug::GetFriendsListResponse, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::GetFriendsListResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::fixbug::GetFriendsListResponse, result_),
-  PROTOBUF_FIELD_OFFSET(::fixbug::GetFriendsListResponse, friends_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::GetFriendsListResponse, result_),
+  PROTOBUF_FIELD_OFFSET(::LS_RPC::GetFriendsListResponse, friends_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::fixbug::ResultCode)},
-  { 8, -1, -1, sizeof(::fixbug::GetFriendsListRequest)},
-  { 15, -1, -1, sizeof(::fixbug::GetFriendsListResponse)},
+  { 0, -1, -1, sizeof(::LS_RPC::ResultCode)},
+  { 8, -1, -1, sizeof(::LS_RPC::GetFriendsListRequest)},
+  { 15, -1, -1, sizeof(::LS_RPC::GetFriendsListResponse)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_ResultCode_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_GetFriendsListRequest_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::fixbug::_GetFriendsListResponse_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_ResultCode_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_GetFriendsListRequest_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::LS_RPC::_GetFriendsListResponse_default_instance_),
 };
 
 const char descriptor_table_protodef_friend_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\014friend.proto\022\006fixbug\"-\n\nResultCode\022\017\n\007"
+  "\n\014friend.proto\022\006LS_RPC\"-\n\nResultCode\022\017\n\007"
   "errcode\030\001 \001(\005\022\016\n\006errmsg\030\002 \001(\014\"\'\n\025GetFrie"
   "ndsListRequest\022\016\n\006userid\030\001 \001(\r\"M\n\026GetFri"
-  "endsListResponse\022\"\n\006result\030\001 \001(\0132\022.fixbu"
-  "g.ResultCode\022\017\n\007friends\030\002 \003(\0142b\n\017FiendSe"
-  "rviceRpc\022O\n\016GetFriendsList\022\035.fixbug.GetF"
-  "riendsListRequest\032\036.fixbug.GetFriendsLis"
+  "endsListResponse\022\"\n\006result\030\001 \001(\0132\022.LS_RP"
+  "C.ResultCode\022\017\n\007friends\030\002 \003(\0142b\n\017FiendSe"
+  "rviceRpc\022O\n\016GetFriendsList\022\035.LS_RPC.GetF"
+  "riendsListRequest\032\036.LS_RPC.GetFriendsLis"
   "tResponseB\003\200\001\001b\006proto3"
   ;
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_friend_2eproto_once;
@@ -120,7 +120,7 @@ PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_friend_2eproto(&descriptor_table_friend_2eproto);
-namespace fixbug {
+namespace LS_RPC {
 
 // ===================================================================
 
@@ -135,7 +135,7 @@ ResultCode::ResultCode(::PROTOBUF_NAMESPACE_ID::Arena* arena,
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.ResultCode)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.ResultCode)
 }
 ResultCode::ResultCode(const ResultCode& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
@@ -149,7 +149,7 @@ ResultCode::ResultCode(const ResultCode& from)
       GetArenaForAllocation());
   }
   errcode_ = from.errcode_;
-  // @@protoc_insertion_point(copy_constructor:fixbug.ResultCode)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.ResultCode)
 }
 
 inline void ResultCode::SharedCtor() {
@@ -161,7 +161,7 @@ errcode_ = 0;
 }
 
 ResultCode::~ResultCode() {
-  // @@protoc_insertion_point(destructor:fixbug.ResultCode)
+  // @@protoc_insertion_point(destructor:LS_RPC.ResultCode)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -183,7 +183,7 @@ void ResultCode::SetCachedSize(int size) const {
 }
 
 void ResultCode::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.ResultCode)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.ResultCode)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -241,7 +241,7 @@ failure:
 
 uint8_t* ResultCode::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.ResultCode)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.ResultCode)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -261,12 +261,12 @@ uint8_t* ResultCode::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.ResultCode)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.ResultCode)
   return target;
 }
 
 size_t ResultCode::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.ResultCode)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.ResultCode)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -302,7 +302,7 @@ void ResultCode::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void ResultCode::MergeFrom(const ResultCode& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.ResultCode)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.ResultCode)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -317,7 +317,7 @@ void ResultCode::MergeFrom(const ResultCode& from) {
 }
 
 void ResultCode::CopyFrom(const ResultCode& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.ResultCode)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.ResultCode)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -359,13 +359,13 @@ GetFriendsListRequest::GetFriendsListRequest(::PROTOBUF_NAMESPACE_ID::Arena* are
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.GetFriendsListRequest)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.GetFriendsListRequest)
 }
 GetFriendsListRequest::GetFriendsListRequest(const GetFriendsListRequest& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   userid_ = from.userid_;
-  // @@protoc_insertion_point(copy_constructor:fixbug.GetFriendsListRequest)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.GetFriendsListRequest)
 }
 
 inline void GetFriendsListRequest::SharedCtor() {
@@ -373,7 +373,7 @@ userid_ = 0u;
 }
 
 GetFriendsListRequest::~GetFriendsListRequest() {
-  // @@protoc_insertion_point(destructor:fixbug.GetFriendsListRequest)
+  // @@protoc_insertion_point(destructor:LS_RPC.GetFriendsListRequest)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -394,7 +394,7 @@ void GetFriendsListRequest::SetCachedSize(int size) const {
 }
 
 void GetFriendsListRequest::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.GetFriendsListRequest)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.GetFriendsListRequest)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -442,7 +442,7 @@ failure:
 
 uint8_t* GetFriendsListRequest::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.GetFriendsListRequest)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.GetFriendsListRequest)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -456,12 +456,12 @@ uint8_t* GetFriendsListRequest::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.GetFriendsListRequest)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.GetFriendsListRequest)
   return target;
 }
 
 size_t GetFriendsListRequest::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.GetFriendsListRequest)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.GetFriendsListRequest)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -490,7 +490,7 @@ void GetFriendsListRequest::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void GetFriendsListRequest::MergeFrom(const GetFriendsListRequest& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.GetFriendsListRequest)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.GetFriendsListRequest)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -502,7 +502,7 @@ void GetFriendsListRequest::MergeFrom(const GetFriendsListRequest& from) {
 }
 
 void GetFriendsListRequest::CopyFrom(const GetFriendsListRequest& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.GetFriendsListRequest)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.GetFriendsListRequest)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -528,10 +528,10 @@ void GetFriendsListRequest::InternalSwap(GetFriendsListRequest* other) {
 
 class GetFriendsListResponse::_Internal {
  public:
-  static const ::fixbug::ResultCode& result(const GetFriendsListResponse* msg);
+  static const ::LS_RPC::ResultCode& result(const GetFriendsListResponse* msg);
 };
 
-const ::fixbug::ResultCode&
+const ::LS_RPC::ResultCode&
 GetFriendsListResponse::_Internal::result(const GetFriendsListResponse* msg) {
   return *msg->result_;
 }
@@ -543,18 +543,18 @@ GetFriendsListResponse::GetFriendsListResponse(::PROTOBUF_NAMESPACE_ID::Arena* a
   if (!is_message_owned) {
     RegisterArenaDtor(arena);
   }
-  // @@protoc_insertion_point(arena_constructor:fixbug.GetFriendsListResponse)
+  // @@protoc_insertion_point(arena_constructor:LS_RPC.GetFriendsListResponse)
 }
 GetFriendsListResponse::GetFriendsListResponse(const GetFriendsListResponse& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       friends_(from.friends_) {
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_result()) {
-    result_ = new ::fixbug::ResultCode(*from.result_);
+    result_ = new ::LS_RPC::ResultCode(*from.result_);
   } else {
     result_ = nullptr;
   }
-  // @@protoc_insertion_point(copy_constructor:fixbug.GetFriendsListResponse)
+  // @@protoc_insertion_point(copy_constructor:LS_RPC.GetFriendsListResponse)
 }
 
 inline void GetFriendsListResponse::SharedCtor() {
@@ -562,7 +562,7 @@ result_ = nullptr;
 }
 
 GetFriendsListResponse::~GetFriendsListResponse() {
-  // @@protoc_insertion_point(destructor:fixbug.GetFriendsListResponse)
+  // @@protoc_insertion_point(destructor:LS_RPC.GetFriendsListResponse)
   if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
@@ -584,7 +584,7 @@ void GetFriendsListResponse::SetCachedSize(int size) const {
 }
 
 void GetFriendsListResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:fixbug.GetFriendsListResponse)
+// @@protoc_insertion_point(message_clear_start:LS_RPC.GetFriendsListResponse)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -603,7 +603,7 @@ const char* GetFriendsListResponse::_InternalParse(const char* ptr, ::PROTOBUF_N
     uint32_t tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .fixbug.ResultCode result = 1;
+      // .LS_RPC.ResultCode result = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_result(), ptr);
@@ -650,11 +650,11 @@ failure:
 
 uint8_t* GetFriendsListResponse::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:fixbug.GetFriendsListResponse)
+  // @@protoc_insertion_point(serialize_to_array_start:LS_RPC.GetFriendsListResponse)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   if (this->_internal_has_result()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
@@ -672,12 +672,12 @@ uint8_t* GetFriendsListResponse::_InternalSerialize(
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:fixbug.GetFriendsListResponse)
+  // @@protoc_insertion_point(serialize_to_array_end:LS_RPC.GetFriendsListResponse)
   return target;
 }
 
 size_t GetFriendsListResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:fixbug.GetFriendsListResponse)
+// @@protoc_insertion_point(message_byte_size_start:LS_RPC.GetFriendsListResponse)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -692,7 +692,7 @@ size_t GetFriendsListResponse::ByteSizeLong() const {
       friends_.Get(i));
   }
 
-  // .fixbug.ResultCode result = 1;
+  // .LS_RPC.ResultCode result = 1;
   if (this->_internal_has_result()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -716,20 +716,20 @@ void GetFriendsListResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
 
 
 void GetFriendsListResponse::MergeFrom(const GetFriendsListResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:fixbug.GetFriendsListResponse)
+// @@protoc_insertion_point(class_specific_merge_from_start:LS_RPC.GetFriendsListResponse)
   GOOGLE_DCHECK_NE(&from, this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   friends_.MergeFrom(from.friends_);
   if (from._internal_has_result()) {
-    _internal_mutable_result()->::fixbug::ResultCode::MergeFrom(from._internal_result());
+    _internal_mutable_result()->::LS_RPC::ResultCode::MergeFrom(from._internal_result());
   }
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void GetFriendsListResponse::CopyFrom(const GetFriendsListResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:fixbug.GetFriendsListResponse)
+// @@protoc_insertion_point(class_specific_copy_from_start:LS_RPC.GetFriendsListResponse)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -766,8 +766,8 @@ const ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor* FiendServiceRpc::GetDescriptor
 }
 
 void FiendServiceRpc::GetFriendsList(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                         const ::fixbug::GetFriendsListRequest*,
-                         ::fixbug::GetFriendsListResponse*,
+                         const ::LS_RPC::GetFriendsListRequest*,
+                         ::LS_RPC::GetFriendsListResponse*,
                          ::google::protobuf::Closure* done) {
   controller->SetFailed("Method GetFriendsList() not implemented.");
   done->Run();
@@ -782,9 +782,9 @@ void FiendServiceRpc::CallMethod(const ::PROTOBUF_NAMESPACE_ID::MethodDescriptor
   switch(method->index()) {
     case 0:
       GetFriendsList(controller,
-             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::fixbug::GetFriendsListRequest*>(
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<const ::LS_RPC::GetFriendsListRequest*>(
                  request),
-             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::fixbug::GetFriendsListResponse*>(
+             ::PROTOBUF_NAMESPACE_ID::internal::DownCast<::LS_RPC::GetFriendsListResponse*>(
                  response),
              done);
       break;
@@ -799,7 +799,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message& FiendServiceRpc::GetRequestPrototype(
   GOOGLE_DCHECK_EQ(method->service(), descriptor());
   switch(method->index()) {
     case 0:
-      return ::fixbug::GetFriendsListRequest::default_instance();
+      return ::LS_RPC::GetFriendsListRequest::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *::PROTOBUF_NAMESPACE_ID::MessageFactory::generated_factory()
@@ -812,7 +812,7 @@ const ::PROTOBUF_NAMESPACE_ID::Message& FiendServiceRpc::GetResponsePrototype(
   GOOGLE_DCHECK_EQ(method->service(), descriptor());
   switch(method->index()) {
     case 0:
-      return ::fixbug::GetFriendsListResponse::default_instance();
+      return ::LS_RPC::GetFriendsListResponse::default_instance();
     default:
       GOOGLE_LOG(FATAL) << "Bad method index; this should never happen.";
       return *::PROTOBUF_NAMESPACE_ID::MessageFactory::generated_factory()
@@ -832,24 +832,24 @@ FiendServiceRpc_Stub::~FiendServiceRpc_Stub() {
 }
 
 void FiendServiceRpc_Stub::GetFriendsList(::PROTOBUF_NAMESPACE_ID::RpcController* controller,
-                              const ::fixbug::GetFriendsListRequest* request,
-                              ::fixbug::GetFriendsListResponse* response,
+                              const ::LS_RPC::GetFriendsListRequest* request,
+                              ::LS_RPC::GetFriendsListResponse* response,
                               ::google::protobuf::Closure* done) {
   channel_->CallMethod(descriptor()->method(0),
                        controller, request, response, done);
 }
 
 // @@protoc_insertion_point(namespace_scope)
-}  // namespace fixbug
+}  // namespace LS_RPC
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::fixbug::ResultCode* Arena::CreateMaybeMessage< ::fixbug::ResultCode >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::ResultCode >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::ResultCode* Arena::CreateMaybeMessage< ::LS_RPC::ResultCode >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::ResultCode >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fixbug::GetFriendsListRequest* Arena::CreateMaybeMessage< ::fixbug::GetFriendsListRequest >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::GetFriendsListRequest >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::GetFriendsListRequest* Arena::CreateMaybeMessage< ::LS_RPC::GetFriendsListRequest >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::GetFriendsListRequest >(arena);
 }
-template<> PROTOBUF_NOINLINE ::fixbug::GetFriendsListResponse* Arena::CreateMaybeMessage< ::fixbug::GetFriendsListResponse >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::fixbug::GetFriendsListResponse >(arena);
+template<> PROTOBUF_NOINLINE ::LS_RPC::GetFriendsListResponse* Arena::CreateMaybeMessage< ::LS_RPC::GetFriendsListResponse >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::LS_RPC::GetFriendsListResponse >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

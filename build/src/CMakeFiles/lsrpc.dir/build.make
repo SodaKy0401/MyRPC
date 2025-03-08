@@ -57,18 +57,18 @@ include src/CMakeFiles/lsrpc.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/lsrpc.dir/flags.make
 
-src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
-src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.o: ../src/mprpcapplication.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.o"
-	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/mprpcapplication.cc.o -c /home/ls/RPC/src/mprpcapplication.cc
+src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
+src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o: ../src/Myrpcapplication.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o"
+	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o -c /home/ls/RPC/src/Myrpcapplication.cc
 
-src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/mprpcapplication.cc.i"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/mprpcapplication.cc > CMakeFiles/lsrpc.dir/mprpcapplication.cc.i
+src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/Myrpcapplication.cc.i"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/Myrpcapplication.cc > CMakeFiles/lsrpc.dir/Myrpcapplication.cc.i
 
-src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/mprpcapplication.cc.s"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/mprpcapplication.cc -o CMakeFiles/lsrpc.dir/mprpcapplication.cc.s
+src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/Myrpcapplication.cc.s"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/Myrpcapplication.cc -o CMakeFiles/lsrpc.dir/Myrpcapplication.cc.s
 
 src/CMakeFiles/lsrpc.dir/rpcprovider.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
 src/CMakeFiles/lsrpc.dir/rpcprovider.cc.o: ../src/rpcprovider.cc
@@ -83,18 +83,18 @@ src/CMakeFiles/lsrpc.dir/rpcprovider.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/rpcprovider.cc.s"
 	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/rpcprovider.cc -o CMakeFiles/lsrpc.dir/rpcprovider.cc.s
 
-src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
-src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.o: ../src/mprpcconfig.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.o"
-	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/mprpcconfig.cc.o -c /home/ls/RPC/src/mprpcconfig.cc
+src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
+src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o: ../src/Myrpcconfig.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o"
+	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o -c /home/ls/RPC/src/Myrpcconfig.cc
 
-src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/mprpcconfig.cc.i"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/mprpcconfig.cc > CMakeFiles/lsrpc.dir/mprpcconfig.cc.i
+src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/Myrpcconfig.cc.i"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/Myrpcconfig.cc > CMakeFiles/lsrpc.dir/Myrpcconfig.cc.i
 
-src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/mprpcconfig.cc.s"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/mprpcconfig.cc -o CMakeFiles/lsrpc.dir/mprpcconfig.cc.s
+src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/Myrpcconfig.cc.s"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/Myrpcconfig.cc -o CMakeFiles/lsrpc.dir/Myrpcconfig.cc.s
 
 src/CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
 src/CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o: ../src/rpcheader.pb.cc
@@ -109,31 +109,31 @@ src/CMakeFiles/lsrpc.dir/rpcheader.pb.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/rpcheader.pb.cc.s"
 	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/rpcheader.pb.cc -o CMakeFiles/lsrpc.dir/rpcheader.pb.cc.s
 
-src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
-src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.o: ../src/mprpcchannel.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.o"
-	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/mprpcchannel.cc.o -c /home/ls/RPC/src/mprpcchannel.cc
+src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
+src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o: ../src/Myrpcchannel.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o"
+	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o -c /home/ls/RPC/src/Myrpcchannel.cc
 
-src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/mprpcchannel.cc.i"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/mprpcchannel.cc > CMakeFiles/lsrpc.dir/mprpcchannel.cc.i
+src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/Myrpcchannel.cc.i"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/Myrpcchannel.cc > CMakeFiles/lsrpc.dir/Myrpcchannel.cc.i
 
-src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/mprpcchannel.cc.s"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/mprpcchannel.cc -o CMakeFiles/lsrpc.dir/mprpcchannel.cc.s
+src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/Myrpcchannel.cc.s"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/Myrpcchannel.cc -o CMakeFiles/lsrpc.dir/Myrpcchannel.cc.s
 
-src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
-src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.o: ../src/mprpccontroller.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.o"
-	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/mprpccontroller.cc.o -c /home/ls/RPC/src/mprpccontroller.cc
+src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
+src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o: ../src/Myrpccontroller.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ls/RPC/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o"
+	cd /home/ls/RPC/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o -c /home/ls/RPC/src/Myrpccontroller.cc
 
-src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/mprpccontroller.cc.i"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/mprpccontroller.cc > CMakeFiles/lsrpc.dir/mprpccontroller.cc.i
+src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lsrpc.dir/Myrpccontroller.cc.i"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ls/RPC/src/Myrpccontroller.cc > CMakeFiles/lsrpc.dir/Myrpccontroller.cc.i
 
-src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/mprpccontroller.cc.s"
-	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/mprpccontroller.cc -o CMakeFiles/lsrpc.dir/mprpccontroller.cc.s
+src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lsrpc.dir/Myrpccontroller.cc.s"
+	cd /home/ls/RPC/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ls/RPC/src/Myrpccontroller.cc -o CMakeFiles/lsrpc.dir/Myrpccontroller.cc.s
 
 src/CMakeFiles/lsrpc.dir/logger.cc.o: src/CMakeFiles/lsrpc.dir/flags.make
 src/CMakeFiles/lsrpc.dir/logger.cc.o: ../src/logger.cc
@@ -163,24 +163,24 @@ src/CMakeFiles/lsrpc.dir/zookeeperutil.cc.s: cmake_force
 
 # Object files for target lsrpc
 lsrpc_OBJECTS = \
-"CMakeFiles/lsrpc.dir/mprpcapplication.cc.o" \
+"CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o" \
 "CMakeFiles/lsrpc.dir/rpcprovider.cc.o" \
-"CMakeFiles/lsrpc.dir/mprpcconfig.cc.o" \
+"CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o" \
 "CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o" \
-"CMakeFiles/lsrpc.dir/mprpcchannel.cc.o" \
-"CMakeFiles/lsrpc.dir/mprpccontroller.cc.o" \
+"CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o" \
+"CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o" \
 "CMakeFiles/lsrpc.dir/logger.cc.o" \
 "CMakeFiles/lsrpc.dir/zookeeperutil.cc.o"
 
 # External object files for target lsrpc
 lsrpc_EXTERNAL_OBJECTS =
 
-src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/mprpcapplication.cc.o
+src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/rpcprovider.cc.o
-src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/mprpcconfig.cc.o
+src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o
-src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/mprpcchannel.cc.o
-src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/mprpccontroller.cc.o
+src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o
+src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/logger.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/zookeeperutil.cc.o
 src/liblsrpc.a: src/CMakeFiles/lsrpc.dir/build.make

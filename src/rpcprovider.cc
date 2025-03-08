@@ -1,5 +1,5 @@
 #include "rpcprovider.h"
-#include "mprpcapplication.h"
+#include "Myrpcapplication.h"
 #include "rpcheader.pb.h"
 #include "logger.h"
 #include "zookeeperutil.h"
@@ -40,8 +40,8 @@ void RpcProvider::NotifyService(google::protobuf::Service *service)
 void RpcProvider::Run()
 {
     // 读取配置文件rpcserver的信息
-    std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
-    uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    std::string ip = MyrpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+    uint16_t port = atoi(MyrpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
     muduo::net::InetAddress address(ip, port);
 
     // 创建TcpServer对象
@@ -120,7 +120,7 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr &conn,
 
     // 根据header_size读取数据头的原始字符流，反序列化数据，得到rpc请求的详细信息
     std::string rpc_header_str = recv_buf.substr(4, header_size);
-    mprpc::RpcHeader rpcHeader;
+    LS_RPC::RpcHeader rpcHeader;
     std::string service_name;
     std::string method_name;
     uint32_t args_size;

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/lsrpc.dir/Myrpcapplication.cc.o"
+  "CMakeFiles/lsrpc.dir/Myrpcchannel.cc.o"
+  "CMakeFiles/lsrpc.dir/Myrpcconfig.cc.o"
+  "CMakeFiles/lsrpc.dir/Myrpccontroller.cc.o"
   "CMakeFiles/lsrpc.dir/logger.cc.o"
-  "CMakeFiles/lsrpc.dir/mprpcapplication.cc.o"
-  "CMakeFiles/lsrpc.dir/mprpcchannel.cc.o"
-  "CMakeFiles/lsrpc.dir/mprpcconfig.cc.o"
-  "CMakeFiles/lsrpc.dir/mprpccontroller.cc.o"
   "CMakeFiles/lsrpc.dir/rpcheader.pb.cc.o"
   "CMakeFiles/lsrpc.dir/rpcprovider.cc.o"
   "CMakeFiles/lsrpc.dir/zookeeperutil.cc.o"

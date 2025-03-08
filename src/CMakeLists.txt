@@ -7,12 +7,12 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 
 set(SRC_LIST 
-    mprpcapplication.cc 
+    Myrpcapplication.cc 
     rpcprovider.cc 
-    mprpcconfig.cc
+    Myrpcconfig.cc
     rpcheader.pb.cc 
-    mprpcchannel.cc
-    mprpccontroller.cc
+    Myrpcchannel.cc
+    Myrpccontroller.cc
     logger.cc
     zookeeperutil.cc
    
