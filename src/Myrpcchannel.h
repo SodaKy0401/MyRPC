@@ -3,6 +3,7 @@
 #include <google/protobuf/service.h>
 #include <google/protobuf/descriptor.h>
 #include <google/protobuf/message.h>
+#include <google/protobuf/stubs/strutil.h>
 
 class MyrpcChannel : public google::protobuf::RpcChannel
 {
@@ -13,4 +14,5 @@ public:
                           const google::protobuf::Message* request,
                           google::protobuf::Message* response,
                           google::protobuf:: Closure* done);
+    
 };

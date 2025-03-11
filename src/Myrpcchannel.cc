@@ -9,7 +9,7 @@
 #include <errno.h>
 #include "Myrpcapplication.h"
 #include "zookeeperutil.h"
-
+#include "ConnectionPool.cpp"
 /*
 header_size + service_name method_name args_size + args
 */
@@ -69,7 +69,7 @@ void MyrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     std::cout << "method_name: " << method_name << std::endl; 
     std::cout << "args_str: " << args_str << std::endl; 
     std::cout << "============================================" << std::endl;
-
+    /*
     // 使用tcp编程，完成rpc方法的远程调用
     int clientfd = socket(AF_INET, SOCK_STREAM, 0);
     if (-1 == clientfd)
@@ -79,6 +79,10 @@ void MyrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         controller->SetFailed(errtxt);
         return;
     }
+    */
+    ConnectionPool& pool = ConnectionPool::GetInstance(); //new
+    
+
 
     // 读取配置文件rpcserver的信息
     // std::string ip = MyrpcApplication::GetInstance().GetConfig().Load("rpcserverip");
@@ -103,12 +107,14 @@ void MyrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     }
     std::string ip = host_data.substr(0, idx);
     uint16_t port = atoi(host_data.substr(idx+1, host_data.size()-idx).c_str()); 
-
-    struct sockaddr_in server_addr;
-    server_addr.sin_family = AF_INET;
-    server_addr.sin_port = htons(port);
-    server_addr.sin_addr.s_addr = inet_addr(ip.c_str());
-
+    
+    int clientfd = pool.GetConnection(ip, port);//new 
+    if (clientfd < 0) {
+        std::cerr << "Failed to get connection" << std::endl;
+        return;
+    }
+   
+    /*
     // 连接rpc服务节点
     if (-1 == connect(clientfd, (struct sockaddr*)&server_addr, sizeof(server_addr)))
     {
@@ -118,11 +124,12 @@ void MyrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         controller->SetFailed(errtxt);
         return;
     }
-
+    */
     // 发送rpc请求
     if (-1 == send(clientfd, send_rpc_str.c_str(), send_rpc_str.size(), 0))
     {
-        close(clientfd);
+        pool.InvalidateConnection(clientfd);
+        //close(clientfd);
         char errtxt[512] = {0};
         sprintf(errtxt, "send error! errno:%d", errno);
         controller->SetFailed(errtxt);
@@ -134,7 +141,8 @@ void MyrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     int recv_size = 0;
     if (-1 == (recv_size = recv(clientfd, recv_buf, 1024, 0)))
     {
-        close(clientfd);
+        pool.InvalidateConnection(clientfd);
+        //close(clientfd);
         char errtxt[512] = {0};
         sprintf(errtxt, "recv error! errno:%d", errno);
         controller->SetFailed(errtxt);
@@ -146,12 +154,12 @@ void MyrpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     // if (!response->ParseFromString(response_str))
     if (!response->ParseFromArray(recv_buf, recv_size))
     {
-        close(clientfd);
+        pool.InvalidateConnection(clientfd);
+        //close(clientfd);
         char errtxt[2048] = {0};
         sprintf(errtxt, "parse error! response_str:%s", recv_buf);
         controller->SetFailed(errtxt);
         return;
     }
-
-    close(clientfd);
+    pool.ReleaseConnection(clientfd);
 }
