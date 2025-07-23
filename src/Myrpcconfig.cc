@@ -18,7 +18,6 @@ void Myrpcconfig::LoadConfigFile(const char *config_file)
     {
         char buf[512] = {0};
         fgets(buf, 512, pf);
-
         // 去掉字符串前面多余的空格
         std::string read_buf(buf);
         Trim(read_buf);
@@ -28,7 +27,6 @@ void Myrpcconfig::LoadConfigFile(const char *config_file)
         {
             continue;
         }
-
         // 解析配置项
         int idx = read_buf.find('=');
         if (idx == -1)
@@ -36,7 +34,6 @@ void Myrpcconfig::LoadConfigFile(const char *config_file)
             // 配置项不合法
             continue;
         }
-
         std::string key;
         std::string value;
         key = read_buf.substr(0, idx);
@@ -45,7 +42,7 @@ void Myrpcconfig::LoadConfigFile(const char *config_file)
         int endidx = read_buf.find('\n', idx);
         value = read_buf.substr(idx+1, endidx-idx-1);
         Trim(value);//去掉value左右空格
-        m_configMap.insert({key, value});
+        m_configMap.insert({key, value});// 把配置项存储到map中
     }
 
     fclose(pf);

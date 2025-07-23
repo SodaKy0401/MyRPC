@@ -2,7 +2,7 @@
 #include "Myrpcconfig.h"
 #include "Myrpcchannel.h"
 #include "Myrpccontroller.h"
-// mprpc框架的基础类，负责框架的一些初始化操作
+// rpc框架的基础类，负责框架的一些初始化操作
 class MyrpcApplication
 {
 public:

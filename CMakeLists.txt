@@ -5,7 +5,8 @@ project(LS_rpc)
 #设置全局的C++标准
 set(CMAKE_CXX_STANDARD 17)#在这里我设置了17，代表使用c++17标准
 set(CMAKE_CXX_STANDARD_REQUIRED True)#CMAKE_CXX_STANDARD_REQUIRED表示强制使用指定的标准
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -pg")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pg")
 
 
 #查找porotbuf包

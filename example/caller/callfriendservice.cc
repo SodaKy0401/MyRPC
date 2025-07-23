@@ -1,10 +1,12 @@
 #include <iostream>
-#include "Myrpcapplication.h"
+#include "../../src/Myrpcapplication.h"
 #include "friend.pb.h"
 #include <atomic>
 #include <vector>
 #include <thread>
 #include "/home/ls/RPC/src/logger.h"
+#include "../../src/zookeeperutil.h"
+#include <zookeeper/zookeeper.h>
   /*
 int main(int argc, char **argv)
 {
@@ -51,13 +53,51 @@ int main(int argc, char **argv)
 
 
 ///*
-void testqps(int thread_id, std::atomic<int> &success_count, std::atomic<int> &fail_count)
-{
+// void testqps(int thread_id, std::atomic<int> &success_count, std::atomic<int> &fail_count)
+// {
 
-    // 整个程序启动以后，想使用krpc框架就要先调用初始化函数(只初始化一次)
+//     // 整个程序启动以后，想使用rpc框架就要先调用初始化函数(只初始化一次)
     
 
-    // 演示调用远程发布的rpc方法Login
+//     // 演示调用远程发布的rpc方法Login
+//     LS_RPC::FiendServiceRpc_Stub stub(new MyrpcChannel());
+//     // rpc方法的请求参数
+//     LS_RPC::GetFriendsListRequest request;
+//     request.set_userid(1000);
+//     // rpc方法的响应
+//     LS_RPC::GetFriendsListResponse response;
+//     MyrpcController controller;
+   
+    
+//     stub.GetFriendsList(&controller,&request, &response, nullptr); // RpcChannel->RpcChannel::callMethod 集中来做所有rpc方法调用的参数序列化和网络发送             // 我们重写的Rpchannel继承google的rpc框架的rpcchannel,形成多态
+    
+//     if (controller.Failed())
+//     {       std::cout << "Failed!" << controller.ErrorText().c_str() ;
+//             fail_count ++;
+//     }
+//     else
+//     {
+//         if (0 == response.result().errcode())
+//         {
+//             std::cout << "rpc GetFriendsList response success!" << std::endl;
+//             int size = response.friends_size();
+//             for (int i=0; i < size; ++i)
+//             {
+//                 std::cout << "index:" << (i+1) << " name:" << response.friends(i) << std::endl;
+//             }
+//             success_count ++;
+//         }
+//         else
+//         {
+//             std::cout << "rpc GetFriendsList response error : " << response.result().errmsg() << std::endl;
+//             fail_count ++;
+//         }
+//     }
+    
+// }
+
+void send_request(int thread_id, std::atomic<int> &success_count, std::atomic<int> &fail_count) {
+    // 创建一个 UserServiceRpc_Stub 对象，用于调用远程的 RPC 方法
     LS_RPC::FiendServiceRpc_Stub stub(new MyrpcChannel());
     // rpc方法的请求参数
     LS_RPC::GetFriendsListRequest request;
@@ -65,40 +105,41 @@ void testqps(int thread_id, std::atomic<int> &success_count, std::atomic<int> &f
     // rpc方法的响应
     LS_RPC::GetFriendsListResponse response;
     MyrpcController controller;
+
    
-    
-    stub.GetFriendsList(&controller,&request, &response, nullptr); // RpcChannel->RpcChannel::callMethod 集中来做所有rpc方法调用的参数序列化和网络发送             // 我们重写的Rpchannel继承google的rpc框架的rpcchannel,形成多态
-    
+
+    // 调用远程的 Login 方法
+    stub.GetFriendsList(&controller,&request, &response, nullptr);
+
+    // 检查 RPC 调用是否成功
     if (controller.Failed())
-    {       std::cout << "Failed!" << controller.ErrorText().c_str() ;
-            //fail_count ++;
-    }
-    else
-    {
-        if (0 == response.result().errcode())
-        {
-            std::cout << "rpc GetFriendsList response success!" << std::endl;
-            int size = response.friends_size();
-            for (int i=0; i < size; ++i)
-            {
-                std::cout << "index:" << (i+1) << " name:" << response.friends(i) << std::endl;
-            }
-            success_count ++;
+        {       //std::cout << "Failed!" << controller.ErrorText().c_str() ;
+                fail_count ++;
         }
         else
         {
-            std::cout << "rpc GetFriendsList response error : " << response.result().errmsg() << std::endl;
-            fail_count ++;
+            if (0 == response.result().errcode())
+            {
+                //std::cout << "rpc GetFriendsList response success!" << std::endl;
+                int size = response.friends_size();
+                for (int i=0; i < size; ++i)
+                {
+                    std::cout << "index:" << (i+1) << " name:" << response.friends(i) << std::endl;
+                }
+                success_count ++;
+            }
+            else
+            {
+                //std::cout << "rpc GetFriendsList response error : " << response.result().errmsg() << std::endl;
+                fail_count ++;
+            }
         }
-    }
-    
 }
-
 
 int main(int argc, char **argv)
 {
     
-    
+    zoo_set_log_stream(nullptr);
     MyrpcApplication::Init(argc, argv);
    /* rpcLogger logger("MyRPC");
     FLAGS_log_dir = "/home/ls/LS_RPC::/example/caller/tmp";
@@ -106,9 +147,9 @@ int main(int argc, char **argv)
     FLAGS_alsologtostderr = false; 
     FLAGS_log_prefix = true; // 允许日志文件名前缀*/
 
-
-    const int thread_count = 100;      // 并发线程数
-    const int requests_per_thread = 50; // 每个线程发送的请求数
+   
+    const int thread_count = 600;      // 并发线程数
+    const int requests_per_thread = 100; // 每个线程发送的请求数
 
     std::vector<std::thread> threads;
     std::atomic<int> success_count(0);
@@ -122,7 +163,7 @@ int main(int argc, char **argv)
                              {
         for(int j=0;j<requests_per_thread;j++)
         {
-          testqps(i,success_count,fail_count);
+            send_request(i,success_count,fail_count);
         } });
     }
     for (auto &t : threads)

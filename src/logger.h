@@ -5,7 +5,7 @@
 #include <mutex>
 #include <string>
 #include <atomic>
-// 定义宏 LOG_INFO("xxx %d %s", 20, "xxxx")
+//定义宏 LOG_INFO("xxx %d %s", 20, "xxxx")
 #define LOG_INFO(logmsgformat, ...) \
     do \
     {  \
@@ -69,13 +69,13 @@ public:
       //提供静态日志方法
       static void Info(const std::string &message)
       {
-        std::cout<<message;
+        //std::cout<<message;
       }
       static void Warning(const std::string &message){
         LOG(WARNING)<<message;
       }
       static void ERROR(const std::string &message){
-        std::cout<<message;
+        //std::cout<<message;
       }
           static void Fatal(const std::string& message) {
         LOG(FATAL) << message;

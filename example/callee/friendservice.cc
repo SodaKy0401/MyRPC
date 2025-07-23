@@ -1,22 +1,22 @@
 #include <iostream>
 #include <string>
 #include "friend.pb.h"
-#include "Myrpcapplication.h"
-#include "rpcprovider.h"
+#include "../../src/Myrpcapplication.h"
+#include "../../src/rpcprovider.h"
 #include <vector>
-#include "logger.h"
-
-
+#include "zookeeperutil.h"
+#include <csignal>
+#include <unistd.h>
+#include <zookeeper/zookeeper.h>
 class FriendService : public LS_RPC::FiendServiceRpc
 {
 public:
     std::vector<std::string> GetFriendsList(uint32_t userid)
     {
-        std::cout << "do GetFriendsList service! userid:" << userid << std::endl;
+        //std::cout << "do GetFriendsList service! userid:" << userid << std::endl;
         std::vector<std::string> vec;
-        vec.push_back("gao yang");
-        vec.push_back("liu hong");
-        vec.push_back("wang shuo");
+        vec.push_back("Shuo Lee");
+        
         return vec;
     }
 
@@ -33,17 +33,22 @@ public:
         for (std::string &name : friendsList)
         {
             std::string *p = response->add_friends();
-            std::cout << "GetFriendsList name" << name <<std::endl;
+            //std::cout << "GetFriendsList name" << name <<std::endl;
             *p = name;
         }
         done->Run();
     }
 };
+void signal_handler(int signum) {
+    //std::cout << "Received signal, generating gmon.out...\n";
+    exit(0);
+}
 
 int main(int argc, char **argv)
 {
+    signal(SIGINT, signal_handler);  // Ctrl+C 也触发 gmon.out 生成
     
-
+    zoo_set_log_stream(nullptr);
     // 调用框架的初始化操作
     MyrpcApplication::Init(argc, argv);
 

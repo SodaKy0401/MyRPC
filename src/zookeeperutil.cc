@@ -26,6 +26,7 @@ void global_watcher(zhandle_t *zh, int type,
 
 ZkClient::ZkClient() : m_zhandle(nullptr)
 {
+	zoo_set_log_stream(nullptr);
 }
 
 ZkClient::~ZkClient()
@@ -38,7 +39,7 @@ ZkClient::~ZkClient()
 
 // 连接zkserver
 void ZkClient::Start()
-{
+{	
     std::string host = MyrpcApplication::GetInstance().GetConfig().Load("zookeeperip");
     std::string port = MyrpcApplication::GetInstance().GetConfig().Load("zookeeperport");
     std::string connstr = host + ":" + port;
@@ -50,16 +51,18 @@ void ZkClient::Start()
 	网络I/O线程  pthread_create  poll
 	watcher回调线程 pthread_create
 	*/
+	zoo_set_log_stream(nullptr);
     m_zhandle = zookeeper_init(connstr.c_str(), global_watcher, 30000, nullptr, nullptr, 0);
     if (nullptr == m_zhandle) 
     {
-        std::cout << "zookeeper_init error!" << std::endl;
+        //std::cout << "zookeeper_init error!" << std::endl;
         exit(EXIT_FAILURE);
     }
 
     std::unique_lock<std::mutex> lock(cv_mutex);
     cv.wait(lock,[]{return is_connected;});
-    std::cout << "zookeeper_init success!" << std::endl;
+    //std::cout << "zookeeper_init success!" << std::endl;
+	//zookeeper_set_log_level(ZOO_LOG_LEVEL_OFF);
 }
 
 void ZkClient::Create(const char *path, const char *data, int datalen, int state)
@@ -76,12 +79,12 @@ void ZkClient::Create(const char *path, const char *data, int datalen, int state
 			&ZOO_OPEN_ACL_UNSAFE, state, path_buffer, bufferlen);
 		if (flag == ZOK)
 		{
-			std::cout << "znode create success... path:" << path << std::endl;
+			//std::cout << "znode create success... path:" << path << std::endl;
 		}
 		else
 		{
-			std::cout << "flag:" << flag << std::endl;
-			std::cout << "znode create error... path:" << path << std::endl;
+			//std::cout << "flag:" << flag << std::endl;
+			//std::cout << "znode create error... path:" << path << std::endl;
 			exit(EXIT_FAILURE);
 		}
 	}
@@ -90,12 +93,12 @@ void ZkClient::Create(const char *path, const char *data, int datalen, int state
 // 根据指定的path，获取znode节点的值
 std::string ZkClient::GetData(const char *path)
 {
-    char buffer[64];
+    char buffer[64]={};
 	int bufferlen = sizeof(buffer);
 	int flag = zoo_get(m_zhandle, path, 0, buffer, &bufferlen, nullptr);
 	if (flag != ZOK)
 	{
-		std::cout << "get znode error... path:" << path << std::endl;
+		//std::cout << "get znode error... path:" << path << std::endl;
 		return "";
 	}
 	else

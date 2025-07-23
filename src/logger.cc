@@ -28,7 +28,7 @@ Logger::Logger():m_loglevel(INFO)
             FILE *pf = fopen(file_name, "a+");
             if (pf == nullptr)
             {
-                std::cout << "logger file : " << file_name << " open error!" << std::endl;
+                //std::cout << "logger file : " << file_name << " open error!" << std::endl;
                 exit(EXIT_FAILURE);
             }
 

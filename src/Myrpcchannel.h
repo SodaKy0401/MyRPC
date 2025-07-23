@@ -14,5 +14,6 @@ public:
                           const google::protobuf::Message* request,
                           google::protobuf::Message* response,
                           google::protobuf:: Closure* done);
+    std::string SelectServer(const std::vector<std::string>& servers);
     
 };

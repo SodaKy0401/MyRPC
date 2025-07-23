@@ -2,14 +2,11 @@
 #include <iostream>
 #include <unistd.h>
 #include <string>
-
 Myrpcconfig MyrpcApplication::m_config;
-
 void ShowArgsHelp()
 {
     std::cout << "format: command -i <configfile>" << std::endl;
 }
-
 void MyrpcApplication::Init(int argc, char **argv)
 {
     if(argc < 2)
@@ -37,10 +34,8 @@ void MyrpcApplication::Init(int argc, char **argv)
             break;
         }
     }
-
     // 开始加载配置文件了 rpcserver_ip=  rpcserver_port   zookeeper_ip=  zookepper_port=
     m_config.LoadConfigFile(config_file.c_str());
-
     // std::cout << "rpcserverip:" << m_config.Load("rpcserverip") << std::endl;
     // std::cout << "rpcserverport:" << m_config.Load("rpcserverport") << std::endl;
     // std::cout << "zookeeperip:" << m_config.Load("zookeeperip") << std::endl;
